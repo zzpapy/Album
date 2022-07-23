@@ -1,0 +1,14 @@
+body {
+    background-color: lightgray;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+img{
+    max-width: 100%;
+}
+.photos{
+    max-width: 25%;
+}
