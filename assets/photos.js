@@ -61,6 +61,7 @@ class App extends React.Component {
         render() {
     return (
             <div className="container">
+                <h1>50 anni Emanuela</h1>
                 {this.state.photos.length != undefined ?  this.state.photos.map((el,index) =>{
                     return (
                         <div className="photos" key={index}>
