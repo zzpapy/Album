@@ -26,7 +26,7 @@ class HomeController extends AbstractController
 
         $finder = new Finder();
         // find all files in the current directory
-        $finder->files()->in($pathHelpers->getApplicationRootDir().'\assets\photos');
+        $finder->files()->in($pathHelpers->getApplicationRootDir().'/assets/photos');
         
         
         if ($finder->hasResults()) {
