@@ -47,12 +47,9 @@ class App extends React.Component {
         return res.json()
         })
         .then(async res => {
-            console.log(res.photos,this.state)
             let listPhotos = []
             res.photos.map(el => {
-                console.log("/photos/"+el)
                 let test = el.replace("jpg","jpg")
-                console.log(el.indexOf("JPG"), el.replace("jpg","jpg"),typeof el,test)
                 listPhotos.push(require("./photos/"+test))
             })
             this.setState({photos : listPhotos}) 
@@ -62,7 +59,6 @@ class App extends React.Component {
     }
    
         render() {
-       console.log(this.state.photos)
     return (
             <div className="container">
                 {this.state.photos.length != undefined ?  this.state.photos.map(el =>{
