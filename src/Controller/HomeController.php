@@ -40,7 +40,7 @@ class HomeController extends AbstractController
             
             // ...
         }
-        dump($list);
+        
         $response->setContent(json_encode([
             "photos" => $list
         ]));
