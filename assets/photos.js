@@ -44,8 +44,7 @@ class App extends React.Component {
         const url = "photos"
         fetch(url)
         .then(async res => {
-            console.log(res)
-        return res.json()
+            return res.json()
         })
         .then(async res => {
             let listPhotos = []
