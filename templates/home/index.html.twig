@@ -5,12 +5,12 @@
 {% block body %}
 
  <h1>50 anni Emanuela</h1>
-<div className="container">
+<div class="container">
     {% for item in list %}
     <pre>
         {# {{ dump('public/'~item) }} #}
     </pre>
-        <div className="photos" key={index}>
+        <div class="photos" key={index}>
             <img src={{ asset('photos/'~item)}}></img>
         </div>    
     {% endfor %}
