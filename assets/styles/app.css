@@ -15,7 +15,9 @@ img{
 .photos{
     max-width: 100%;
 }
-whats
+.whats{
+    width: 5em;
+}
 .title{
     text-align: center;
 }
