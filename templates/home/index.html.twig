@@ -3,16 +3,17 @@
 {% block title %}Photos{% endblock %}
 
 {% block body %}
-
- <h1 class="title">50 anni Emanuela</h1>
-<div class="container">
-    {% for item in list %}
-    <pre>
-        {# {{ dump('public/'~item) }} #}
-    </pre>
-        <div class="photos" key={index}>
-            <img src={{ asset('photos/'~item)}}></img>
-        </div>    
-    {% endfor %}
-</div
+<div>
+    <h1 class="title">50 anni Emanuela</h1>
+    <div class="container">
+        {% for item in list %}
+        <pre>
+            {# {{ dump('public/'~item) }} #}
+        </pre>
+            <div class="photos" key={index}>
+                <img src={{ asset('photos/'~item)}}></img>
+            </div>    
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
