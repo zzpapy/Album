@@ -4,13 +4,26 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
 
+
         <meta property="og:site_name" content="50 anni Emanuela">
-        <meta property="og:title" content="50 anni Emanuela" />
-        <meta property="og:description" content="photos" />
+        <meta property="og:title" content="50 anni Emanuela">
+        <meta property="og:description" content="The best photo studio for your events">
+
+        <!-- Image to display -->
+        <!-- Replace   «example.com/image01.jpg» with your own -->
+        <meta property="og:image" content="https://sas.papy-dev.fr/photos/pict.jpg">
+
+        <!-- No need to change anything here -->
         <meta property="og:type" content="website" />
-        <meta property="og:image" itemprop="image" content=="https://sas.papy-dev.fr/photos/pict.jpg">
-        <meta property="og:type" content="website" />
-        <meta property="og:updated_time" content="1440432930" />
+        <meta property="og:image:type" content="image/jpeg">
+
+        <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+        <meta property="og:image:width" content="300">
+        <meta property="og:image:height" content="300">
+
+        <!-- Website to visit when clicked in fb or WhatsApp-->
+        <meta property="og:url" content="sas.papy-dev.fr">
+
 
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
