@@ -8,9 +8,11 @@
     
     <div class="owl-carousel">
         {% for item in list %}
-            <div class="photos" key={index}>
+        {# <div class="owl-slide d-flex align-items-center cover" style="background-image: url(IMG_SRC);">
+            <div class="photos" key={index}> #}
                 <img src={{ asset('photos/'~item)}}></img>
-            </div>    
+            {# </div>    
+        </div> #}
         {% endfor %}
     </div>
 </div>

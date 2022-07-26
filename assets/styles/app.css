@@ -14,9 +14,10 @@ img{
     max-width: 100%;
 }
 .photos{
-    max-width: 75%;
+    max-width: 100%;
     margin: 0 auto;
 }
+
 .whats{
     width: 5em;
 }
