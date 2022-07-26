@@ -8,9 +8,6 @@
     
     <div class="container">
         {% for item in list %}
-        <pre>
-            {# {{ dump('public/'~item) }} #}
-        </pre>
             <div class="photos" key={index}>
                 <img src={{ asset('photos/'~item)}}></img>
             </div>    
