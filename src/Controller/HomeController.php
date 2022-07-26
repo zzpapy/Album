@@ -30,7 +30,6 @@ class HomeController extends AbstractController
             
             // ...
         }
-        dump($absoluteFilePath);
 
       
         return $this->render('home/index.html.twig', [
