@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="description" content="50 anni emanuela" />
 
 
         <meta property="og:site_name" content="50 anni Emanuela">
@@ -22,7 +23,7 @@
         <meta property="og:image:height" content="300">
 
         <!-- Website to visit when clicked in fb or WhatsApp-->
-        <meta property="og:url" content="sas.papy-dev.fr">
+        <meta property="og:url" content="https://sas.papy-dev.fr">
         <link itemprop="thumbnailUrl" href="https://sas.papy-dev.fr/photos/pict.jpg"> 
         <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> 
             <link itemprop="url" href="https://sas.papy-dev.fr/photos/pict.jpg"> 
@@ -41,7 +42,7 @@
     </head>
     <body>
         <div clas="whats">
-            <a href="whatsapp://send?text=http://sas.papy-dev.fr" ><img class="whats" src={{asset('whats.png')}}></a>
+            <a href="whatsapp://send?text=https://sas.papy-dev.fr" ><img class="whats" src={{asset('whats.png')}}></a>
         </div>
         {% block body %}{% endblock %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
