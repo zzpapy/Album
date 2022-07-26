@@ -6,7 +6,7 @@
 <div class="home">
     <h1 class="title">50 anni Emanuela</h1>
     
-    <div class="container">
+    <div class="owl-carousel">
         {% for item in list %}
             <div class="photos" key={index}>
                 <img src={{ asset('photos/'~item)}}></img>
