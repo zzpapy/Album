@@ -13,6 +13,12 @@ body {
 img{
     max-width: 100%;
 }
+.whats{
+    position: fixed;
+    top : 2em;
+    left: 2em ;
+    z-index: 1000;
+}
 .photos{
     max-width: 100%;
     margin: 0 auto;
