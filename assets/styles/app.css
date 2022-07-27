@@ -1,5 +1,8 @@
+
+
 body {
-    background-color: lightgray;
+    background: rgb(0,255,46);
+background: radial-gradient(circle, rgba(0,255,46,0.27494747899159666) 35%, rgba(182,201,190,0.8995973389355743) 89%, rgba(94,223,0,0.3785889355742297) 96%);
 }
 .home{
     max-width: 100%;
@@ -11,28 +14,31 @@ body {
     margin: 0 auto;
 }
 img{
-    max-width: 75% !important;
-    margin:0 auto;
+    max-width: 75% ;
+    margin:3em auto;
 }
 .whats{
-    position: fixed;
-    top : 2em;
-    left: 2em ;
-    z-index: 1000;
+   display: none;
 }
 .photos{
     max-width: 100%;
     margin: 0 auto;
 }
 
-.whats{
-    width: 5em;
-}
 .title{
     text-align: center;
 }
 @media screen and (min-width: 0px) and (max-width: 768px){
-    .photos{
-        max-width: 100%;
+    img{
+        max-width: 100% !important;
+        margin:5em 0;
+    }
+    .whats{
+        display: block;
+        width: 5em;
+        position: fixed;
+        top : -3.5em;
+        left: 2em ;
+        z-index: 1000;
     }
 }
