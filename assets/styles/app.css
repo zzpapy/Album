@@ -35,10 +35,13 @@ img{
     }
     .whats{
         display: block;
-        width: 5em;
         position: fixed;
+        z-index: 1000;
         top : -3.5em;
         left: 2em ;
-        z-index: 1000;
+    }
+    .whatsimg{
+        margin: 0;
+        width: 5em;
     }
 }
