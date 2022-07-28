@@ -17,8 +17,8 @@ img{
     max-width: 75% ;
     margin:3em auto;
 }
-.whats{
-   display: none;
+.whats, .whatsimg{
+   display: none !important;
 }
 .photos{
     max-width: 100%;
@@ -41,6 +41,7 @@ img{
         left: 2em ;
     }
     .whatsimg{
+        display: block !important;
         margin: 0;
         width: 5em;
     }
